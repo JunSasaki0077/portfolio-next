@@ -1,5 +1,6 @@
+import { cn } from "@/lib/utils";
 import { Oswald } from "@next/font/google";
-import clsx from "clsx";
+import { ThemeButton } from "../ThemeButton";
 
 const font = Oswald({
   subsets: ["latin"],
@@ -8,10 +9,11 @@ const font = Oswald({
 export const Header = () => {
   return (
     <header>
-      <div>
-        <h1 className={clsx("text-4xl", font.className)}>
+      <div className="flex items-center pt-8 px-12 justify-between">
+        <h1 className={cn("text-4xl ", font.className)}>
           Jun&apos;s Portfolio
         </h1>
+        <ThemeButton />
       </div>
     </header>
   );

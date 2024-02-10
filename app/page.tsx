@@ -41,7 +41,7 @@ export default async function Home() {
         <p className="mb-6">ご用の方は以下よりご連絡ください。</p>
         <Button className="bg-sky-500 shadow-2xl">お問い合わせ</Button>
       </div>
-      <div>
+      <div className="mb-20">
         <h3 className="text-center text-2xl font-bold mb-4">Blog</h3>
         <ul className="flex flex-col items-center gap-3">
           {posts.map((post) => (
@@ -51,14 +51,6 @@ export default async function Home() {
               </Link>
             </li>
           ))}
-        </ul>
-      </div>
-      <div>
-        <h3>SNS</h3>
-        <ul>
-          <li>twitter</li>
-          <li>github</li>
-          <li>Zenn</li>
         </ul>
       </div>
     </>
