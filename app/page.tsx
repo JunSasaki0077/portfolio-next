@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Skills } from "@/lib/skillsData";
 import Image from "next/image";
 import Link from "next/link";
-import { Post } from "./type/type";
+import { Post } from "./types/type";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import BarChartIcon from "@mui/icons-material/BarChart";
@@ -21,6 +21,7 @@ export default async function Home() {
       <div className="text-center mb-10">
         <AccountCircleIcon />
         <h3 className=" text-2xl font-bold mb-4">About</h3>
+
         <p>
           1991年生まれ。東京都出身、東京在住のWebエンジニア。
           <br />

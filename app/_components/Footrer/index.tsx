@@ -2,8 +2,7 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import XIcon from "@mui/icons-material/X";
 import Image from "next/image";
-import { SvgIcon } from "@mui/material";
-import Zenn from "@/public/zenn.svg";
+import Zenn from "./zenn.svg";
 import Link from "next/link";
 export const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import { SKILL } from "@/app/type/type";
+import { SKILL } from "@/app/types/type";
 
 export const Skills: SKILL[] = [
   { name: "HTML/CSS" },
