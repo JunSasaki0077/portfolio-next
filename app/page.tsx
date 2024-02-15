@@ -15,7 +15,10 @@ export default async function Home() {
   const data = await res.json();
   const posts: Post[] = data.articles.slice(0, 10);
   return (
-    <>
+    <div className="mt-40">
+      <div className="flex justify-center  ">
+        <Image src="/jun.jpeg" alt="jun" width={300} height={450} />
+      </div>
       <h2 className="text-center text-4xl font-bold m-5">Jun</h2>
       <p className="text-center mb-10">Front End Engineer</p>
       <div className="text-center mb-10">
@@ -60,6 +63,6 @@ export default async function Home() {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
