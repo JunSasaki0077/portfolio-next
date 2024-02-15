@@ -17,7 +17,7 @@ export default async function Home() {
   return (
     <div className="mt-40">
       <div className="flex justify-center  ">
-        <Image src="/jun.jpeg" alt="jun" width={300} height={450} />
+        <Image src="/jun.jpg" alt="jun" width={300} height={450} />
       </div>
       <h2 className="text-center text-4xl font-bold m-5">Jun</h2>
       <p className="text-center mb-10">Front End Engineer</p>
