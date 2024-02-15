@@ -26,9 +26,13 @@ export default async function Home() {
         <h3 className=" text-2xl font-bold mb-4">About</h3>
 
         <p>
-          1991年生まれ。東京都出身、東京在住のWebエンジニア。
+          1991年生まれ。東京在住のWebエンジニア。
           <br />
-          未経験からWeb制作会社コーダー(マークアップ)を経験し
+          未経験からWeb制作会社コーダー(マークアップ)を経験しました。
+          <br />
+          現在はNext.js,TypeScriptをなどの技術を用いた
+          <br />
+          Webアプリ開発の勉強をしております。
         </p>
       </div>
       <div className="mb-10 text-center">
