@@ -19,7 +19,7 @@ export default async function Home() {
       <div className="flex justify-center  ">
         <Image src="/jun.jpg" alt="jun" width={300} height={450} />
       </div>
-      <h2 className="text-center text-4xl font-bold m-5">Jun</h2>
+      <h2 className="text-center text-4xl font-bold m-5">佐々木 純</h2>
       <p className="text-center mb-10">Front End Engineer</p>
       <div className="text-center mb-10">
         <AccountCircleIcon />
@@ -52,7 +52,9 @@ export default async function Home() {
         <EmailIcon />
         <h3 className=" text-2xl font-bold mb-4">Contact</h3>
         <p className="mb-6">ご用の方は以下よりご連絡ください。</p>
-        <Button className="bg-sky-500 shadow-2xl">お問い合わせ</Button>
+        <Link href="https://docs.google.com/forms/d/12_Sott6xyZfJrokV8rh4-J30qvWofb75p2M_DFTr2JE/prefill">
+          <Button className="bg-sky-500 shadow-2xl">お問い合わせ</Button>
+        </Link>
       </div>
       <div className="mb-20 text-center">
         <RssFeedIcon />

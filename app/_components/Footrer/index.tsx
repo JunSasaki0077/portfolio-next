@@ -2,7 +2,6 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import XIcon from "@mui/icons-material/X";
 import Image from "next/image";
-import Zenn from "./zenn.svg";
 import Link from "next/link";
 export const Footer = () => {
   return (
@@ -28,7 +27,9 @@ export const Footer = () => {
             </Link>
           </li>
         </ul>
-        <p className="text-sm">@2024 Jun&apos;s Portfolio</p>
+        <p className="text-sm">
+          @{new Date().getFullYear()} Jun&apos;s Portfolio
+        </p>
       </div>
     </footer>
   );
