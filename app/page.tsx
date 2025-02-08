@@ -7,6 +7,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import EmailIcon from "@mui/icons-material/Email";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
+import Work from "./_components/Work";
 
 export default async function Home() {
   const res = await fetch(
@@ -16,11 +17,13 @@ export default async function Home() {
   const posts: Post[] = data.articles.slice(0, 10);
   return (
     <div className="mt-40">
-      <div className="flex justify-center  ">
+      <div className="flex justify-center mb-5 ">
         <Image src="/jun.jpg" alt="jun" width={300} height={450} />
       </div>
-      <h2 className="text-center text-4xl font-bold m-5">佐々木 純</h2>
+      <h2 className="text-center text-3xl font-bold m-0">Jun</h2>
+      <h3 className="text-center mb-5">佐々木純</h3>
       <p className="text-center mb-10">Front End Engineer</p>
+
       <div className="text-center mb-10">
         <AccountCircleIcon />
         <h3 className=" text-2xl font-bold mb-4">About</h3>
@@ -48,6 +51,7 @@ export default async function Home() {
           ))}
         </ul>
       </div>
+      <Work />
       <div className="text-center mb-10">
         <EmailIcon />
         <h3 className=" text-2xl font-bold mb-4">Contact</h3>
@@ -58,7 +62,7 @@ export default async function Home() {
       </div>
       <div className="mb-20 text-center">
         <RssFeedIcon />
-        <h3 className=" text-2xl font-bold mb-4">Blog</h3>
+        <h3 className=" text-2xl font-bold mb-4">Article</h3>
         <ul className="flex flex-col items-center gap-3">
           {posts.map((post) => (
             <li key={post.id} className="text-blue-500">

@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Oswald } from "@next/font/google";
 import { ThemeButton } from "../ThemeButton";
+import Link from "next/link";
 
 const font = Oswald({
   subsets: ["latin"],
@@ -10,9 +11,11 @@ export const Header = () => {
   return (
     <header>
       <div className="flex items-center pt-8 px-12 justify-between">
-        <h1 className={cn("text-4xl ", font.className)}>
-          Jun&apos;s Portfolio
-        </h1>
+        <Link href="/">
+          <h1 className={cn("text-4xl ", font.className)}>
+            Jun&apos;s Portfolio
+          </h1>
+        </Link>
         <ThemeButton />
       </div>
     </header>

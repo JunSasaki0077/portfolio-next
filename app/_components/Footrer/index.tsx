@@ -12,11 +12,6 @@ export const Footer = () => {
         </h3>
         <ul className="flex items-center justify-center mb-10 gap-7">
           <li>
-            <Link href="https://twitter.com/jun20077">
-              <XIcon />
-            </Link>
-          </li>
-          <li>
             <Link href="https://github.com/JunSasaki0077">
               <GitHubIcon />
             </Link>
